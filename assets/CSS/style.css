@@ -1,19 +1,92 @@
+/*
+
+Este arquivo é parte do programa Ing-blog
+
+Ing-blog é um software livre; você pode redistribuí-lo e/ou
+modificá-lo dentro dos termos da Licença Pública Geral GNU como
+publicada pela Free Software Foundation (FSF); na versão 3 da
+Licença, ou (a seu critério) qualquer versão posterior.
+
+Este programa é distribuído na esperança de que possa ser útil,
+mas SEM NENHUMA GARANTIA; sem uma garantia implícita de ADEQUAÇÃO
+a qualquer MERCADO ou APLICAÇÃO EM PARTICULAR. Veja a
+Licença Pública Geral GNU para maiores detalhes.
+
+Você deve ter recebido uma cópia da Licença Pública Geral GNU junto
+com este programa, Se não, veja <http://www.gnu.org/licenses/>.
+
+*/
+
 :root{
 
 }
 
+::selection{
+
+}
+
+body{
+    background-image: url(../IMG/4K\ No\ Logo\ G360.png);
+    overflow-x: hidden;
+}
+
+
+.flex-p{
+    flex-direction: row;
+}
+
+.fs-p{
+    font-size: calc(1.3rem + .6vw) ;
+}
+
 .exm{
-    animation: rotate 1s infinite;
-    border-color: saddlebrown;
+    animation: rotate 10s infinite;
+
+    width: 40rem;
+
+
+
+
+}
+
+.logos{
+    width: 3rem;
+}
+
+.chavinha{
+    width: 6rem;
+}
+
+.font-all {
+    font-size: 8rem;
+}
+
+.t-p{
+    text-align: justify;
+}
+
+@media (max-width:1059px) {
+    .flex-p{
+        flex-direction: column;
+    }
+
+    .exm{
+        width: 25vw;
+    }
+
+    .fs-p{
+        font-size: 5vw;
+        padding: 4rem;
+    }
 }
 
 
 @keyframes rotate {
     0%,100%{
-        transform: rotate3d(0, 0, 0, 0deg);
+        transform: rotate(0deg);
     }
 
     50%{
-        transform: rotate3d(0, 0, 0, -30deg);
+        transform: rotate(-15deg);
     }
 }
