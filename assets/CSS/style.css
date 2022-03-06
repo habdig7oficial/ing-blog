@@ -20,11 +20,11 @@ com este programa, Se não, veja <http://www.gnu.org/licenses/>.
 */
 
 :root{
-
+    --azul:rgb(97, 111, 242);
 }
 
 ::selection{
-
+    background-color: var(--azul);
 }
 
 body{
