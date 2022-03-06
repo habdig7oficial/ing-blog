@@ -1,3 +1,5 @@
+/*Copyright © 2022 Mateus Felipe da Silveira Vieira*/
+
 /*
 
 Este arquivo é parte do programa Ing-blog
