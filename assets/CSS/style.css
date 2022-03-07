@@ -111,6 +111,13 @@ body{
     }
 }
 
+@media (max-width:484px) {
+
+    .mlh{
+        border: none !important;
+    }
+}
+
 @keyframes aani {
     0%,100%{
         text-shadow: none;
