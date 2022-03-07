@@ -5,7 +5,7 @@
   "main": "blog.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon start"
+    "start": "node blog.js"
   },
   "repository": {
     "type": "git",
