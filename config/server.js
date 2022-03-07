@@ -39,5 +39,10 @@ consign().include("./routes").into(run_express)
 /*definir uma pasta diferente da views para armazenar os conteúdos*/
 /*run_express.set("views","documentos")*/
 
+app.use(function(err, req, res, next) {
+    console.error(err.stack);
+    res.status(500).send('Something wrong is not right');
+  });
+
 /*exportar as variáveis run_express e porta*/
 module.exports = {run_express,porta}
