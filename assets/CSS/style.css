@@ -19,12 +19,21 @@ com este programa, Se não, veja <http://www.gnu.org/licenses/>.
 
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
 :root{
     --azul:rgb(97, 111, 242);
+    --azul_var1:rgb(152, 223, 234);
+    --azul_var2:rgb(85, 250, 239);
+    --azul_var3:rgb(61, 252, 240);
+
+
+    --branco:rgb(255, 255, 255)
 }
 
 ::selection{
     background-color: var(--azul);
+    color: var(--branco);
 }
 
 body{
@@ -32,6 +41,18 @@ body{
     overflow-x: hidden;
 }
 
+.anorm:hover{
+    color: var(--azul_var1);
+    animation: aani 2s infinite;
+}
+
+.fira_code{
+    font-family: 'Fira Code', monospace;
+}
+
+.caz{
+    color: var(--azul_var1);
+}
 
 .flex-p{
     flex-direction: row;
@@ -59,6 +80,14 @@ body{
     width: 6rem;
 }
 
+.chavinha2{
+    width: 3rem;
+}
+
+.ind{
+
+}
+
 .font-all {
     font-size: 8rem;
 }
@@ -80,6 +109,26 @@ body{
         font-size: 5vw;
         padding: 4rem;
     }
+}
+
+@keyframes aani {
+    0%,100%{
+        text-shadow: none;
+        color: var(--azul_var2);
+      }
+    
+      50%{
+    
+        text-shadow:       
+        0 0 7px   var(--azul_var3),
+        0 0 10px  var(--azul_var3),
+        0 0 21px  var(--azul_var3),
+        0 0 42px  var(--azul_var2),
+        0 0 82px  var(--azul_var2),
+        0 0 92px  var(--azul_var2),
+        0 0 102px var(--azul_var2),
+        0 0 151px var(--azul_var2);
+      }
 }
 
 
